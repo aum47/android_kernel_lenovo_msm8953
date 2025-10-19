@@ -455,17 +455,17 @@ static int himax_power_on(struct himax_i2c_platform_data *pdata, bool on)
 		goto power_off;
 
 
-		rc = reg_set_optimum_mode_check(pdata->vcc_i2c, HX_I2C_LOAD_UA);
-		if (rc < 0) {
-			E("Regulator vcc_i2c set_opt failed rc=%d\n", rc);
-			//goto error_reg_opt_i2c;
-		}
+	rc = reg_set_optimum_mode_check(pdata->vcc_i2c, HX_I2C_LOAD_UA);
+	if (rc < 0) {
+		E("Regulator vcc_i2c set_opt failed rc=%d\n", rc);
+		//goto error_reg_opt_i2c;
+	}
 
-		rc = regulator_enable(pdata->vcc_i2c);
-		if (rc) {
-			E("Regulator vcc_i2c enable failed rc=%d\n", rc);
-			//goto error_reg_en_vcc_i2c;
-		}
+	rc = regulator_enable(pdata->vcc_i2c);
+	if (rc) {
+		E("Regulator vcc_i2c enable failed rc=%d\n", rc);
+		//goto error_reg_en_vcc_i2c;
+	}
 	
 
 	msleep(130);
