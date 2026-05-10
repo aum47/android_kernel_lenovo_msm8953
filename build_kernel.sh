@@ -8,4 +8,4 @@ grep -q 'extern YYLTYPE yylloc' scripts/dtc/dtc-lexer.l || \
 flex -o scripts/dtc/dtc-lexer.lex.c scripts/dtc/dtc-lexer.l
 
 make ARCH=arm64 lineageos_tbx304_defconfig
-make ARCH=arm64 -j64 2>&1 | tee out/build.log
+make ARCH=arm64 -j64 2>&1 | tee build.log
