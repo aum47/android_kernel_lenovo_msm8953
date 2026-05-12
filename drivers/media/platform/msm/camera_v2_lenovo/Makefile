@@ -23,3 +23,4 @@ obj-$(CONFIG_MSM_JPEGDMA) += jpeg_dma/
 obj-$(CONFIG_MSMB_CAMERA) += msm_buf_mgr/
 obj-$(CONFIG_MSM_FD) += fd/
 obj-$(CONFIG_LENOVO_DIR_CAMERA) += cci_intf.o
+ccflags-y += -I$(srctree)/drivers/media/platform/msm/camera_v2_lenovo/isp

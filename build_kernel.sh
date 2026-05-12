@@ -1,6 +1,6 @@
 #!/bin/bash
 export ARCH=arm64
-export CROSS_COMPILE=/home/aumpatel/toolchain/gcc-linaro-7.5.0/bin/aarch64-linux-gnu-
+export CROSS_COMPILE=/home/aumpatel/toolchain/gcc-linaro-4.9/bin/aarch64-linux-gnu-
 
 # Fix yylloc double definition (idempotent)
 grep -q 'extern YYLTYPE yylloc' scripts/dtc/dtc-lexer.l || \
