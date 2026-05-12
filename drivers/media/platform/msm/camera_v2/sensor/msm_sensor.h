@@ -32,8 +32,8 @@
 #include <media/v4l2-subdev.h>
 #include <media/v4l2-ioctl.h>
 #include "io/msm_camera_i2c.h"
-#include "msm_camera_dt_util.h"
-#include "msm_sd.h"
+#include "io/msm_camera_dt_util.h"
+#include "io/msm_sd.h"
 
 #define DEFINE_MSM_MUTEX(mutexname) \
 	static struct mutex mutexname = __MUTEX_INITIALIZER(mutexname)
