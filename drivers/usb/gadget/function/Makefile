@@ -48,3 +48,4 @@ usb_f_accessory-y               := f_accessory.o
 obj-$(CONFIG_USB_F_ACC)         += usb_f_accessory.o
 ccflags-y += -I$(srctree)/drivers/usb/gadget/function
 ccflags-y += -I$(srctree)/include/linux
+ccflags-y += -I$(srctree)/drivers/usb/gadget
